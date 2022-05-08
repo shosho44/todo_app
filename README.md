@@ -22,3 +22,6 @@ github flow
 
 # ER図
 <img width="934" alt="ER-diagram" src="https://user-images.githubusercontent.com/80147523/167281553-ea47b638-7fcd-41db-918a-1776d4e53d55.png">
+
+# インフラ構成
+<img width="982" alt="インフラ構成" src="https://user-images.githubusercontent.com/80147523/167282105-baa3747c-8441-4008-9ffe-cd59d4ad63f8.png">
