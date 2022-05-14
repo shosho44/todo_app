@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>  <!--distにcss作ってるけど、なぜか適用されないクラス名があるので別途設置した-->
+    <link rel="stylesheet" href="../css/dist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full">
+        <div class="h-screen flex justify-center items-center">
+            <div class="w-96 h-3/6 bg-slate-400">
+                <form action="" method="">
+                    <div class="flex justify-center items-start mt-8">
+                        <div class="w-5/6 h-8 shadow-xl">
+                            <input type="text" placeholder="やること" class="w-80 text-lg font-sans shadow-inner rounded-md pl-1">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-start mt-4">
+                        <div class="w-5/6 h-8 shadow-xl">
+                            <input type="text" placeholder="いつまで" class="w-80 text-lg font-sans shadow-inner rounded-md pl-1">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-start mt-4">
+                        <div class="w-5/6 h-8 shadow-xl">
+                            <input type="text" placeholder="カテゴリ" class="w-80 text-lg font-sans shadow-inner rounded-md pl-1">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-start mt-4">
+                        <div class="w-5/6 h-8 shadow-xl">
+                            <input type="text" placeholder="優先順位" class="w-80 text-lg font-sans shadow-inner rounded-md pl-1">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-start mt-4">
+                        <div class="w-5/6 h-8 shadow-xl">
+                            <input type="text" placeholder="リピート" class="w-80 text-lg font-sans shadow-inner rounded-md pl-1">
+                        </div>
+                    </div>
+                    <div class="flex mt-8">
+                        <div class="w-5/6 h-8 flex justify-center">
+                            <input type="submit" value="キャンセル" class="w-36 text-lg font-sans bg-white rounded-md pl-1">
+                        </div>
+                        <div class="w-5/6 h-8 flex justify-center">
+                            <input type="submit" value="完了" class="w-36 text-lg font-sans bg-white rounded-md pl-1">
+                        </div>
+                    </div>
+                    <div class="flex mt-12">
+                        <div class="w-full h-8 flex justify-center">
+                            <input type="submit" value="削除" class="w-36 text-lg font-sans bg-white rounded-md pl-1">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
