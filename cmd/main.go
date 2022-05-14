@@ -7,7 +7,8 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("web/index.html")
+	t, _ := template.ParseFiles("web/html/index.html")
+
 	err := t.Execute(w, nil)
 	if err != nil {
 		fmt.Println("error occured inner handler")

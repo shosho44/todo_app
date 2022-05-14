@@ -25,3 +25,10 @@ github flow
 
 # インフラ構成
 <img width="980" alt="インフラ構成" src="https://user-images.githubusercontent.com/80147523/167282182-8e4d9247-27d8-48bd-9b5f-5ac015fb106d.png">
+
+# 開発環境セットアップ
+tailwind関連
+rootディレクトリで
+npm run build
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>  <!--distにcss作ってるけど、なぜか適用されないクラス名があるので別途設置した-->
+    <link rel="stylesheet" href="../css/dist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="h-full">
+        <div class="flex justify-center mb-8">
+            <form action="" method="">
+                <input type="text" placeholder="タスクカテゴリを入力" class="w-80 text-lg font-sans shadow-inner rounded-md mr-4">
+                <input type="submit" value="追加" class="hover:bg-slate-300 rounded-md">
+            </form>
+        </div>
+        <div class="flex justify-center">
+            <div class="w-96">
+                <!--現状2つ表示しているが、forみたいなん使ってsqlでもらった分表示する-->
+                <div class="flex justify-center items-start">
+                    <div class="w-5/6 h-8 shadow-xl mt-4">
+                        <a href="#" class="w-full text-lg flex justify-center">
+                            <div class="w-full rounded-md bg-white font-sans text-center text-lg">
+                                洗濯
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center items-start">
+                    <div class="w-5/6 h-8 shadow-xl mt-4">
+                        <a href="#" class="w-full text-lg flex justify-center">
+                            <div class="w-full rounded-md bg-white font-sans text-center text-lg">
+                                掃除
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
