@@ -4,12 +4,13 @@
 package di
 
 import (
+	"todo_app/internal/configs"
 	"todo_app/internal/externalinterface/server"
 
 	"github.com/google/wire"
 )
 
-func InitializeServer() server.Server {
+func InitializeServer(*config.Config) server.Server {
 	panic(
 		wire.Build(
 			server.NewServer,
