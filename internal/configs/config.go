@@ -23,7 +23,10 @@ func Load() (*Config, error) {
 	}
 
 	var config Config
-	yaml.Unmarshal(yamlByte, &config.Server)
+	err = yaml.Unmarshal(yamlByte, &config.Server)
 
+	if err != nil {
+		return nil, fmt.Errorf("calling Unmarshal: %w", err)
+	}
 	return &config, nil
 }
