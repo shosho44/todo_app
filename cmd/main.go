@@ -1,23 +1,22 @@
 package main
 
 import (
-	"fmt"
-	"html/template"
-	"net/http"
+	"log"
+	config "todo_app/internal/configs"
+	"todo_app/internal/di"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("web/html/index.html")
-
-	err := t.Execute(w, nil)
-	if err != nil {
-		fmt.Println("error occured inner handler")
-	}
-}
 func main() {
-	http.HandleFunc("/", handler)
-	err := http.ListenAndServe(":80", nil)
+	config, err := config.Load()
+
 	if err != nil {
-		fmt.Println("error occured inner main")
+		log.Fatalf("calling Load: %v", err)
+	}
+
+	server := di.InitializeServer(config)
+
+	err = server.Run()
+	if err != nil {
+		log.Fatalf("calling Run: %v", err)
 	}
 }
